@@ -1,0 +1,61 @@
+Miasto w którym mieszka Janusz od pewnego czasu boryka się z problemem wandali. Demolują wszystko co stanie na ich drodze.
+W nocy ich łupem padł passat Janusza. Nasz bohater szybko zgłosił to wszędzie gdzie tylko się dało. Niestety wszystkie organa 
+ścigania są zajęte innymi ważniejszymi sprawami. To przelało czarę goryczy. Janusz pobiegł do ratusza porozmawiać z burmistrzem i
+dowiedzieć się dlaczego w tak dużym mieście nie ma jeszcze monitoringu.
+
+- Panie Januszu, jesteśmy tylko małym biednym miastem. Pozyskanie funduszy na ten cel nie jest proste. Zwłaszcza, że mamy teraz inne 
+ważniejsze wydatki, takie jak budowa pomnika operatorów wózków widłowych. Mamy co prawda kamery które otrzymaliśmy z województwa ale
+trzeba je jeszcze odpowiednio rozmieścić. Firma projektowa jest jednak bardzo droga.
+
+- Znajdzie się na to rada, ale najpierw opracujmy reguły według których kamery powinny być rozmieszczone.
+
+Janusz z burmistrzem zaczął przygotowywać wytyczne do rozmieszczenia kamer. Wiadomo, że miasto zbudowane jest na planie gwiazdy.
+Oznacza to, że z dowolnego punktu A do dowolnego punktu B można dotrzeć tylko jedną trasą. Przede wszystkim kamery powinny zostać 
+rozmieszczone na najbardziej ruchliwych skrzyżowaniach, czyli takich w których zbiega się najwięcej dróg. Ustalili zatem ile minimalnie
+dróg powinno się zbiegać na skrzyżowaniu na którym zostanie zainstalowany monitoring. Każde monitorowane skrzyżowanie powinno oddzielać 
+jedno skrzyżowanie bez kamery. Nie może jednak wystąpić sytuacja w której więcej niż trzy następujące po sobie skrzyżowania nie są 
+monitorowane. Wówczas nawet jeżeli ilość dróg składających się na skrzyżowanie jest mniejsza niż ustalono kamera i tak zostanie na 
+nim zainstalowana. Pierwsza kamera musi zostać umieszczona w centrum miasta, czyli w miejscu w którym stoi ratusz. To właśnie z tego 
+miejsca powinno rozpocząć się rozmieszczanie kamer w głąb miasta. Jeżeli poruszając się w głąb miasta napotkamy skrzyżowanie spełniające
+warunki to od razu jest ono oznaczane do umieszczenia kamery. Burmistrza wciąż gryzło jednak jedno pytanie.
+
+- Panie Januszu, cały czas zastanawiam się kto nam przygotuje mapę rozmieszczenia kamer. Przecież nie mamy na to funduszy.
+
+- Jak to kto? Za darmo mogą nam to zrobić tylko studenci.
+
+Wejście:
+W pierwszej linii program otrzymuje dwie liczby całkowite n i m, określające liczbę skrzyżowań w mieście oraz minimalną ilość dróg 
+które powinny zbiegać się na monitorowanym skrzyżowaniu. Skrzyżowania numerowane są od 1 do n. Ratusz zawsze znajduje się na
+skrzyżowaniu numer 1. W kolejnych n-1 liniach program otrzymuje parę liczb całkowitych a i b które reprezentują drogę łączącą dwa
+skrzyżowania o numerach a i b podawane warstwami gdzie a jest ojcem natomiast b synem.
+
+1 ≤ n ≤ 250000
+
+Wyjście:
+Na wyjściu program powinien wyświetlić numery skrzyżowań na których powinny zostać umieszczone kamery zgodnie z wytycznymi podanymi w 
+zadaniu w kolejności rosnącej. Skrzyżowania należy rozpatrywać w kolejności preorder.
+
+Przykład:
+Wejście:
+19 3
+1 2
+1 3
+1 4
+2 5
+3 6
+4 7
+5 8
+5 9
+5 10
+6 18
+6 19
+7 17
+18 14
+18 15
+18 16
+19 11
+19 12
+19 13
+
+Wyjście:
+1 5 6
