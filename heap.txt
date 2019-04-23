@@ -1,0 +1,54 @@
+Na osiedlu Janusza w ostatnich dniach został otwarty bardzo specyficzny sklep. Oferuje towary najpopularniejszych marek w bardzo
+atrakcyjnych cenach. Okazuje się jednak, że obowiązują w nim zasady rodem z minionej epoki. Każdy klient który podchodzi do sklepowej
+lady może kupić tylko jeden produkt. Oczywiście w kolejce można stawać wiele razy. Co więcej klienci którzy mają bardziej zasobny portfel
+podchodzą do lady jako pierwsi. Jeżeli nowo przybyły klient ma tyle samo pieniędzy co któryś z już czekających w kolejce to ustawia się
+tuż za nim. Dzień wcześniej na witrynie sklepowej zawsze jest wywieszana kartka z informacją jaki asortyment będzie dostępny w sklepie.
+Każdy produkt na liście ma swój unikalny numer oraz cenę. Klienci jednak nie wiedzą ile sztuk danego przedmiotu będzie czekało w sklepie.
+Oznacza to, że klient może stać w kolejce bardzo długo i ostatecznie kiedy nadejdzie jego kolej to może okazać się, że danego produktu 
+nie ma już na stanie sklepu. Hasłem przewodnim klientów jest „nie ważne czy potrzebne ważne, że w promocji”. Dlatego każdy klient ma 
+listę zakupów z której próbuje kupić najbardziej pożądane towary. Wiadomo, nawet jeżeli nie ma tej jednej upragnionej rzeczy to szkoda 
+by było stracić poświęcony czas. Pozostaje tylko liczyć, że uda się kupić cokolwiek z posiadanej listy. Ponieważ Janusz na całym osiedlu
+uważany jest za prawdziwego męża stanu, sfrustrowani sytuacją klienci sklepu zwrócili się do niego z prośbą żeby zaradził coś na wielogod
+zinne kolejki. Po chwili zastanowienia przyszła mu do głowy genialna myśl. A gdyby tak napisać algorytm który zasymuluje działanie 
+kolejki?
+
+Wejście:
+Na wejściu program otrzymuje liczby naturalne n oraz m oznaczające kolejno liczbę produktów w sklepie oraz liczbę klientów w kolejce.
+W kolejnych n liniach program otrzymuje opis produktów w sklepie składający się z dwóch liczb naturalnych l będącą opisem ilości danego 
+towaru w magazynie oraz c będącą ceną produktu. Produkty numerowane są od 0. W kolejnych m liniach program otrzymuje opis każdego z 
+klientów w kolejności w której przychodzą do kolejki, gdzie w pierwszej linii podane są dwie liczby naturalne p oraz k. Pierwsza wartość
+to początkowa zasobność portfela klienta a druga to ilość przedmiotów na liście zakupowej. W kolejnej linii program otrzymuje k numerów
+produktów które klient chce kupić zaczynając od najbardziej pożądanego.
+
+Wyjście:
+Na wyjściu program powinien wypisać produkty które kupił dany klient w takiej samej kolejności w jakiej trafiali do kolejki na początku
+działania programu. Jeżeli klientowi nie udało się kupić niczego wyświetlany jest znak ‘-’.
+
+1 ≤ n ≤ 50000
+
+1 ≤ m ≤ 25000
+
+1 ≤ k ≤ 200
+
+Przykład:
+Wejście:
+5 4
+2 2
+1 3
+3 3
+6 6
+2 3
+15 3
+1 0 3
+20 2
+1 4
+10 2
+3 4
+8 2
+1 1
+
+Wyjście:
+0 3
+1 4
+3 4
+-
