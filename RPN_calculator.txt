@@ -1,0 +1,32 @@
+Janusz, jako modelowy wręcz ojciec spędza ostatnio całe wieczory z córką Andżelą, na rozwiązywaniu pracy domowej z matematyki.
+Nie od dziś wiadomo, że nauczyciele przesadzają z ilością zadań. Ostatnio uczennica codziennie przynosi do domu listy na których 
+jest kilkadziesiąt równań do rozwiązania. Janusz nie jest jednak orłem z matematyki. Tę cechę odziedziczyła po nim córka. Mimo,
+że zwykle siedzą do późnych godzin wieczornych to często okazuje się, że w wynikach są błędy. Muszą je wówczas poprawiać. Do tego 
+zadania są podchwytliwe i czasami zawierają błędy w ustawieniu nawiasów. To wszystko jednak nie jest jeszcze najgorsze. Już wkrótce 
+w telewizji zacznie się nowy sezon ulubionego serialu Janusza, w związku z czym nie będzie miał czasu na pracę z Andżelą. Wiadomo, 
+są w życiu rzeczy ważne i ważniejsze. Bohater wpadł zatem na genialny pomysł. Wystarczy stworzyć program który z listy równań wybierze
+te w których nawiasy są ustawione poprawnie i poda ich wyniki. Nie ma to jak tzw. “gotowiec”.
+
+Wejście:
+W pierwszej linii wejścia program otrzymuje liczbę n opisującą ilość równań do rozwiązania. Kolejne n linii zawiera równania r. Może się 
+ono składać z liczb całkowitych, działań ‘+’, ‘-‘, ‘*’, ‘/’ oraz nawiasów ‘()’, ‘[]’, ‘{}’.
+
+1 ≤ n ≤ 10000
+
+Wyjście:
+Na wyjściu program powinien wyświetlić wyniki równań których nawiasy są ustawione poprawnie. Jeżeli w równaniu jest błąd program powinien
+wyświetlić informację BLAD. Nawiasowanie jest uznawane za błędne wtedy kiedy z którejś strony brakuje nawiasu lub lewy nie zgadza się z 
+prawym.
+
+Przykład:
+Wejście:
+4
+[(2+4)-8]*9
+](16+8)-4
+(3+4)*9
+[(1+8)*4]+9-6
+Wyjście:
+-18
+BLAD
+63
+39
