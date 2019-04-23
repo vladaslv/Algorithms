@@ -1,0 +1,57 @@
+Janusz nie sądził, że współczesna młodzieżowa rozrywka zainteresuje go na tyle, by miał spędzić przy niej godziny. A jednak, gdy Piotr
+pokazał mu swoją nową interaktywną grę planszową „Zielony wygrywa” z zielono-czerwonym pionkiem w odstawkę poszło polerowanie samochodu,
+sąsiedzkie intrygi i polskie seriale. Na planszy gry widoczne są pola połączone jednokierunkowymi drogami. W każdym ruchu gracz może
+przesunąć swojego pionka o jedno pole. Pionek może kilkakrotnie przejść przez dane pole. Po każdym ruchu pionek zmienia kolor z 
+zielonego na czerwony lub z czerwonego na zielony. Na początku gry pionek ustawiany jest w losowym miejscu i przybiera kolor zielony. 
+Gra kończy się, gdy poruszenie pionka nie jest możliwe (nie ma żadnej drogi wychodzącej z pola, na którym jest pionek). Gracz wygrywa 
+jeśli na końcu gry pionek ma kolor zielony.
+
+Każda partia gry jest unikalna, bo plansza za każdym razem generuje się na nowo. Tak jest, nadchodzą czasy elektronicznych planszówek!
+
+Na podstawie opisu planszy i wybranego pola startowego spróbuj ocenić, czy Janusz może wygrać daną partię. Możliwe jest, że startując z 
+wybranego pola nie da się wygrać partii, ale można nie dopuścić do przegranej poprzez zapętlenie się na drodze. Taką sytuację nazywamy 
+remisem.
+
+Wejście:
+Na wejściu program otrzymuje liczbę naturalną t, oznaczającą liczbę partii, jakie Janusz danego dnia rozegra. Następnie podanych jest t 
+zestawów danych. Każdy zestaw składa się z trzech liczb naturalnych n, m oraz s oznaczających liczbę pól, liczbę dróg pomiędzy polami i
+numer pola, z którego rozpoczyna się gra.
+W kolejnych m liniach występują pary liczb naturalnych x i y – które informują, że pionek z pola nr x można przesunąć na pole nr y.
+Należy przyjąć, że nie pojawią się wielokrotnie te same połączenia ani pętle (czyli połączenia które zaczynają się i kończą w tym samym
+polu).
+Pola numerowane są od 0.
+
+1 ≤ t ≤ 10
+1 ≤ n ≤ 100000
+0 ≤ m ≤ 2*n
+0 ≤ x,y < n
+Wyjście:
+Na wyjściu dla każdego testu program ma wypisać informację NIE, jeżeli nie ma możliwości, by Janusz wygrał partię, REMIS, jeżeli nie da
+się wygrać partii, ale można doprowadzić do remisu lub TAK, jeżeli Janusz może wygrać grę. W przypadku wygranej należy w drugiej linii
+wyjścia dla danego testu wypisać numery pól, na które kolejno należy przesunąć pionek. Należy podać najkrótsze rozwiązanie. W przypadku
+ścieżek równej długości należy wybrać pierwszą leksykograficznie.
+
+Przykład:
+Wejście:
+3
+6 7 3
+0 1
+1 5
+2 0
+2 1
+3 2
+3 4
+4 0
+4 3 0
+0 1
+1 2
+2 3
+2 2 0
+0 1
+1 0
+
+Wyjście:
+TAK
+3 2 0 1 5
+NIE
+REMIS
